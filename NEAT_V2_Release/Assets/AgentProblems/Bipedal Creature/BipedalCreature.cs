@@ -87,7 +87,7 @@ public class BipedalCreature : MonoBehaviour, IAgentTester
 
         }
 
-        net.AddNetFitness(transform.position.x * 3);
+        net.AddNetFitness(transform.GetChild(0).position.x);
 
     }
 
